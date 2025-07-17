@@ -4,7 +4,6 @@ import { Star, Leaf, Award, Globe } from "lucide-react"
 // import { Button } from "@/components/ui/button"
 // import { Card, CardContent } from "@/components/ui/card"
 // import { Badge } from "@/components/ui/badge"
-import Layout from "../../components/layout"
 import { useNavigate } from "react-router-dom"
 
 export default function Products() {

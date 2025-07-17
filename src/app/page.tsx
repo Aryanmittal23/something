@@ -1,6 +1,6 @@
 "use client"
 import { Link } from "react-router-dom";
-import { Award, Users, Target, Globe, Shield, TrendingUp } from "lucide-react";
+import { Award, Users, Target, Globe, Shield } from "lucide-react";
 
 export default function Home() {
   return (

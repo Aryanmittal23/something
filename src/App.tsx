@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import Layout from './components/layout'
 import { Routes, Route } from 'react-router-dom'

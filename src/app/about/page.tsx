@@ -1,7 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
 import { Target, Eye, Users, Award } from "lucide-react"
-import Layout from "../../components/layout"
 
 export default function About() {
   return (

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"; // if using react-router
-import { Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Globe } from "lucide-react"
+import { Instagram, Linkedin, Mail, Phone, MapPin, Globe } from "lucide-react"
 
 export default function Footer() {
   return (
