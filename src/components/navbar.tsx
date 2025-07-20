@@ -3,8 +3,11 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"; // if using react-router
 import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from './LanguageSwitcher'
 
 export default function Navbar() {
+  const { t } = useTranslation()
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -17,12 +20,12 @@ export default function Navbar() {
   }, [])
 
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Products", href: "/products" },
-    { name: "Export Process", href: "/export-process" },
-    { name: "Certificate", href: "/certificates" },
-    { name: "Contact", href: "/contact" },
+    { name: t('nav.home'), href: "/" },
+    { name: t('nav.about'), href: "/about" },
+    { name: t('nav.products'), href: "/products" },
+    { name: t('nav.exportProcess'), href: "/export-process" },
+    { name: t('nav.certificate'), href: "/certificates" },
+    { name: t('nav.contact'), href: "/contact" },
   ]
 
   return (
@@ -59,6 +62,7 @@ export default function Navbar() {
                 <span className="absolute inset-x-0 bottom-0 h-0.5 bg-brand-green-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200" />
               </Link>
             ))}
+            <LanguageSwitcher />
           </div>
 
           {/* CTA Button
@@ -108,9 +112,12 @@ export default function Navbar() {
               <div className="px-3 py-2">
                 <Link to="/contact">
                   <button className="w-full bg-brand-green-500 text-white px-4 py-2 rounded-full font-medium text-sm hover:bg-brand-green-600 transition-colors">
-                    Get Quote
+                    {t('nav.getQuote')}
                   </button>
                 </Link>
+              </div>
+              <div className="px-3 py-2 border-t border-brand-navy-100">
+                <LanguageSwitcher />
               </div>
             </div>
           </motion.div>

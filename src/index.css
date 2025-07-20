@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+/* RTL Support for Arabic */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="rtl"] .text-left {
+  text-align: right;
+}
+
+[dir="rtl"] .text-right {
+  text-align: left;
+}
+
+[dir="rtl"] .ml-auto {
+  margin-left: unset;
+  margin-right: auto;
+}
+
+[dir="rtl"] .mr-auto {
+  margin-right: unset;
+  margin-left: auto;
+}
+
+[dir="rtl"] .space-x-8 > * + * {
+  margin-left: unset;
+  margin-right: 2rem;
+}
+
+[dir="rtl"] .space-x-2 > * + * {
+  margin-left: unset;
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .space-x-3 > * + * {
+  margin-left: unset;
+  margin-right: 0.75rem;
+}
+
+/* Language switcher RTL adjustments */
+[dir="rtl"] .language-switcher-dropdown {
+  right: unset;
+  left: 0;
+}

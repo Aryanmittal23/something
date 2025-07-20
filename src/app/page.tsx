@@ -1,32 +1,35 @@
 "use client"
 import { Link } from "react-router-dom";
 import { Award, Users, Target, Globe, Shield } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 to-cream-100 flex flex-col">
       {/* Hero Section */}
       <section className="flex-1 flex flex-col items-center justify-center text-center py-24 px-4">
         {/* No background image or overlay */}
         <div className="relative z-10 w-full flex flex-col items-center justify-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-amber-900 mb-6">Welcome to GlobalTrustHub</h1>
+          <h1 className="text-5xl md:text-6xl font-bold text-amber-900 mb-6">{t('home.hero.title')}</h1>
           <p className="text-xl md:text-2xl text-amber-700 mb-8 max-w-2xl mx-auto">
-            Where Indian Quality Meets the World.<br />
+            {t('home.hero.subtitle')}<br />
             <span className="block mt-4 text-lg md:text-xl text-amber-800">
-              At GlobalTrustHub, we are dedicated to connecting the finest Indian products with customers across the globe. Our mission is to showcase the rich heritage, craftsmanship, and natural bounty of India through our premium exports. Whether it's nutrient-rich Makhana from Bihar, exquisite handwoven textiles, or authentic handicrafts, we ensure every product reflects our commitment to quality and trust.
+              {t('home.hero.description1')}
             </span>
             <span className="block mt-4 text-lg md:text-xl text-amber-800">
-              As a new and passionate team in the export industry, we may be at the beginning of our journey, but our dedication to customer satisfaction and ethical business practices is unwavering. We believe in building lasting relationships and delivering value with every shipment.
+              {t('home.hero.description2')}
             </span>
             <span className="block mt-4 text-lg md:text-xl text-amber-800">
-              Discover our range of products and experience the best of India—exported with care, integrity, and a personal touch.
+              {t('home.hero.description3')}
             </span>
           </p>
           <Link
             to="/products"
             className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-full text-lg shadow transition-colors"
           >
-            Explore Products
+            {t('home.hero.exploreProducts')}
           </Link>
         </div>
       </section>
@@ -34,19 +37,19 @@ export default function Home() {
       {/* Featured Products */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-amber-900 mb-10 text-center">Featured Products</h2>
+          <h2 className="text-3xl font-bold text-amber-900 mb-10 text-center">{t('home.featuredProducts.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Premium Makhana",
+                name: t('home.featuredProducts.premiumMakhana'),
                 image: "/makhana.jpg",
               },
               {
-                name: "Handwoven Textiles",
+                name: t('home.featuredProducts.handwovenTextiles'),
                 image: "/textiles.jpg",
               },
               {
-                name: "Brass Artifacts",
+                name: t('home.featuredProducts.brassArtifacts'),
                 image: "/brass-artifacts.jpg",
               },
             ].map((product) => (
@@ -71,22 +74,22 @@ export default function Home() {
       {/* Why Choose Us Section */}
       <section className="py-16 bg-cream-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-amber-900 mb-10 text-center">Why Choose Us?</h2>
+          <h2 className="text-3xl font-bold text-amber-900 mb-10 text-center">{t('home.whyChooseUs.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-md p-8 text-center hover:shadow-lg transition-shadow">
               <Globe className="w-12 h-12 text-amber-600 mx-auto mb-6" />
-              <h3 className="text-xl font-semibold text-amber-900 mb-4">Fresh Perspective</h3>
-              <p className="text-amber-700">As a new company, we bring energy, innovation, and a modern approach to every partnership.</p>
+              <h3 className="text-xl font-semibold text-amber-900 mb-4">{t('home.whyChooseUs.freshPerspective.title')}</h3>
+              <p className="text-amber-700">{t('home.whyChooseUs.freshPerspective.description')}</p>
             </div>
             <div className="bg-white rounded-lg shadow-md p-8 text-center hover:shadow-lg transition-shadow">
               <Shield className="w-12 h-12 text-amber-600 mx-auto mb-6" />
-              <h3 className="text-xl font-semibold text-amber-900 mb-4">Honesty & Dedication</h3>
-              <p className="text-amber-700">We may not have decades of experience, but we make up for it with honesty, hard work, and a genuine desire to deliver value.</p>
+              <h3 className="text-xl font-semibold text-amber-900 mb-4">{t('home.whyChooseUs.honestyDedication.title')}</h3>
+              <p className="text-amber-700">{t('home.whyChooseUs.honestyDedication.description')}</p>
             </div>
             <div className="bg-white rounded-lg shadow-md p-8 text-center hover:shadow-lg transition-shadow">
               <Users className="w-12 h-12 text-amber-600 mx-auto mb-6" />
-              <h3 className="text-xl font-semibold text-amber-900 mb-4">Customer Focus</h3>
-              <p className="text-amber-700">Your trust means everything to us. We listen, adapt, and go the extra mile to ensure your satisfaction at every step.</p>
+              <h3 className="text-xl font-semibold text-amber-900 mb-4">{t('home.whyChooseUs.customerFocus.title')}</h3>
+              <p className="text-amber-700">{t('home.whyChooseUs.customerFocus.description')}</p>
             </div>
           </div>
         </div>
@@ -95,26 +98,23 @@ export default function Home() {
       {/* Values Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-amber-900 mb-10 text-center">Our Values</h2>
+          <h2 className="text-3xl font-bold text-amber-900 mb-10 text-center">{t('home.values.title')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 icon: Award,
-                title: "Quality First",
-                description:
-                  "We never compromise on quality. Every product is carefully selected and tested to meet international standards.",
+                title: t('home.values.qualityFirst.title'),
+                description: t('home.values.qualityFirst.description'),
               },
               {
                 icon: Users,
-                title: "Trust & Transparency",
-                description:
-                  "Building lasting relationships through honest communication and transparent business practices.",
+                title: t('home.values.trustTransparency.title'),
+                description: t('home.values.trustTransparency.description'),
               },
               {
                 icon: Target,
-                title: "Customer Focus",
-                description:
-                  "Your success is our success. We're committed to understanding and exceeding your expectations.",
+                title: t('home.values.customerFocus.title'),
+                description: t('home.values.customerFocus.description'),
               },
             ].map((value, idx) => (
               <div key={idx} className="bg-cream-50 rounded-lg shadow-md p-8 text-center hover:shadow-lg transition-shadow">
@@ -130,15 +130,15 @@ export default function Home() {
       {/* Get in Touch Section */}
       <section className="py-16 bg-amber-50">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-amber-900 mb-4">Ready to Connect?</h2>
+          <h2 className="text-3xl font-bold text-amber-900 mb-4">{t('home.getInTouch.title')}</h2>
           <p className="text-lg text-amber-700 mb-8">
-            Have questions or want to start your export journey? Reach out to us and our team will get back to you promptly.
+            {t('home.getInTouch.description')}
           </p>
           <Link
             to="/contact"
             className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-full text-lg shadow transition-colors"
           >
-            Contact Us
+            {t('home.getInTouch.contactUs')}
           </Link>
         </div>
       </section>

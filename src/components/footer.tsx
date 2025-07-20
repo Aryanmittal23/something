@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom"; // if using react-router
 import { Instagram, Linkedin, Mail, Phone, MapPin, Globe } from "lucide-react"
+import { useTranslation } from 'react-i18next'
 
 export default function Footer() {
+  const { t } = useTranslation();
+  
   return (
     <footer className="bg-brand-navy-900 text-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -18,8 +21,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-black mb-6 max-w-md leading-relaxed">
-              GlobalTrustHub is your trusted partner in premium export services, specializing in high-quality
-              Makhana and authentic Indian handicrafts. We connect Indian excellence with global markets.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a
@@ -89,15 +91,15 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-black">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-6 text-black">{t('footer.quickLinks')}</h3>
             <ul className="space-y-3">
               {[
-                { name: "Home", href: "/" },
-                { name: "About", href: "/about" },
-                { name: "Products", href: "/products" },
-                { name: "Export Process", href: "/export-process" },
-                { name: "Certificate", href: "/certificates" },
-                { name: "Contact", href: "/contact" },
+                { name: t('nav.home'), href: "/" },
+                { name: t('nav.about'), href: "/about" },
+                { name: t('nav.products'), href: "/products" },
+                { name: t('nav.exportProcess'), href: "/export-process" },
+                { name: t('nav.certificate'), href: "/certificates" },
+                { name: t('nav.contact'), href: "/contact" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -114,7 +116,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-black">Contact Info</h3>
+            <h3 className="text-lg font-semibold mb-6 text-black">{t('footer.contactInfo')}</h3>
             <div className="space-y-4">
               <a href="mailto:info@globaltrusthub.com" className="flex items-center space-x-3 group hover:underline" aria-label="Email">
                 <Mail size={16} className="text-brand-green-400 group-hover:text-brand-green-600 transition-colors" />
@@ -139,14 +141,14 @@ export default function Footer() {
         <div className="border-t border-brand-navy-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-black text-sm">
-              © 2025 GlobalTrustHub. All rights reserved. | Where Quality Meets the World
+              {t('footer.copyright')}
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy-policy" className="text-black hover:text-brand-green-400 text-sm transition-colors">
-                Privacy Policy
+                {t('footer.privacyPolicy')}
               </Link>
               <Link to="/terms" className="text-black hover:text-brand-green-400 text-sm transition-colors">
-                Terms of Service
+                {t('footer.termsOfService')}
               </Link>
             </div>
           </div>

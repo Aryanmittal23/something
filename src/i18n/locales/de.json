@@ -1,0 +1,264 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "products": "Produkte",
+    "exportProcess": "Exportprozess",
+    "certificate": "Zertifikat",
+    "contact": "Kontakt",
+    "getQuote": "Angebot anfordern"
+  },
+  "home": {
+    "hero": {
+      "title": "Willkommen bei GlobalTrustHub",
+      "subtitle": "Wo indische Qualität auf die Welt trifft.",
+      "description1": "Bei GlobalTrustHub widmen wir uns der Verbindung der feinsten indischen Produkte mit Kunden auf der ganzen Welt. Unsere Mission ist es, das reiche Erbe, das Handwerk und die natürliche Fülle Indiens durch unsere Premium-Exporte zu präsentieren. Ob es sich um nährstoffreiche Makhana aus Bihar, exquisite handgewebte Textilien oder authentische Handwerkskunst handelt, wir stellen sicher, dass jedes Produkt unser Engagement für Qualität und Vertrauen widerspiegelt.",
+      "description2": "Als neues und leidenschaftliches Team in der Exportbranche stehen wir vielleicht am Anfang unserer Reise, aber unser Engagement für Kundenzufriedenheit und ethische Geschäftspraktiken ist unerschütterlich. Wir glauben an den Aufbau langfristiger Beziehungen und die Lieferung von Wert bei jeder Sendung.",
+      "description3": "Entdecken Sie unsere Produktpalette und erleben Sie das Beste aus Indien – exportiert mit Sorgfalt, Integrität und einer persönlichen Note.",
+      "exploreProducts": "Produkte erkunden"
+    },
+    "featuredProducts": {
+      "title": "Ausgewählte Produkte",
+      "premiumMakhana": "Premium Makhana",
+      "handwovenTextiles": "Handgewebte Textilien",
+      "brassArtifacts": "Messing-Artefakte"
+    },
+    "whyChooseUs": {
+      "title": "Warum uns wählen?",
+      "freshPerspective": {
+        "title": "Frische Perspektive",
+        "description": "Als neues Unternehmen bringen wir Energie, Innovation und einen modernen Ansatz zu jeder Partnerschaft."
+      },
+      "honestyDedication": {
+        "title": "Ehrlichkeit & Hingabe",
+        "description": "Wir haben vielleicht nicht Jahrzehnte an Erfahrung, aber wir machen es wett mit Ehrlichkeit, harter Arbeit und einem echten Wunsch, Wert zu liefern."
+      },
+      "customerFocus": {
+        "title": "Kundenorientierung",
+        "description": "Ihr Vertrauen bedeutet uns alles. Wir hören zu, passen uns an und gehen den extra Schritt, um Ihre Zufriedenheit in jedem Schritt sicherzustellen."
+      }
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "qualityFirst": {
+        "title": "Qualität zuerst",
+        "description": "Wir kompromittieren niemals bei der Qualität. Jedes Produkt wird sorgfältig ausgewählt und getestet, um internationale Standards zu erfüllen."
+      },
+      "trustTransparency": {
+        "title": "Vertrauen & Transparenz",
+        "description": "Aufbau langfristiger Beziehungen durch ehrliche Kommunikation und transparente Geschäftspraktiken."
+      },
+      "customerFocus": {
+        "title": "Kundenorientierung",
+        "description": "Ihr Erfolg ist unser Erfolg. Wir sind verpflichtet, Ihre Erwartungen zu verstehen und zu übertreffen."
+      }
+    },
+    "getInTouch": {
+      "title": "Bereit für die Verbindung?",
+      "description": "Haben Sie Fragen oder möchten Sie Ihre Exportreise beginnen? Kontaktieren Sie uns und unser Team wird sich umgehend bei Ihnen melden.",
+      "contactUs": "Kontaktieren Sie uns"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Über GlobalTrustHub",
+      "subtitle": "Brücken zwischen indischer Exzellenz und globalen Möglichkeiten bauen"
+    },
+    "companyStory": {
+      "title": "Das Herz unserer Mission",
+      "description1": "Gegründet mit der Vision, Indiens beste Produkte der Welt zu präsentieren, begann GlobalTrustHub als kleines Familienunternehmen mit großen Träumen. Heute sind wir stolz darauf, eine vertrauensvolle Brücke zu sein, die indische Handwerker und Produzenten mit globalen Märkten verbindet.",
+      "description2": "Unsere Reise begann mit einem einfachen Glauben: Qualität spricht eine universelle Sprache. Von den unberührten Feuchtgebieten Bihars, wo unser Premium-Makhana geerntet wird, bis zu den geschickten Werkstätten, wo unser Handwerk liebevoll geschaffen wird, stellen wir sicher, dass jedes Produkt eine Geschichte von Exzellenz erzählt.",
+      "description3": "Jedes Stück erzählt eine Geschichte von Hingabe, Tradition und Hoffnung,",
+      "description4": "sagt Aryan oft. Wir erkannten, dass hinter jedem Paar geschickter Hände eine Familie, eine Gemeinschaft und ein reiches kulturelles Erbe steht, das globale Anerkennung verdient.",
+      "quote": "Wir exportieren nicht nur Produkte; wir exportieren Träume, Traditionen und die geschickten Hände, die aus Rohmaterialien Magie schaffen. Jede Sendung trägt die Hoffnungen von Handwerkerfamilien, die uns vertrauen, ihre Arbeit der Welt zu präsentieren.",
+      "author": "- Aryan Mittal, Gründer & CEO"
+    },
+    "missionVision": {
+      "mission": {
+        "title": "Unsere Mission",
+        "description": "Der vertrauensvollste Partner im globalen Handel zu sein, der indische Exzellenz mit internationalen Märkten verbindet und dabei die höchsten Standards für Qualität, Integrität und Kundenzufriedenheit aufrechterhält."
+      },
+      "vision": {
+        "title": "Unsere Vision",
+        "description": "Eine Welt zu schaffen, in der indische Produkte global für ihre Qualität und Authentizität anerkannt werden und kulturellen Austausch und wirtschaftliches Wachstum durch nachhaltige Handelspraktiken fördern."
+      }
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "subtitle": "Die Prinzipien, die alles leiten, was wir tun",
+      "qualityFirst": {
+        "title": "Qualität zuerst",
+        "description": "Wir kompromittieren niemals bei der Qualität. Jedes Produkt wird sorgfältig ausgewählt und getestet, um internationale Standards zu erfüllen."
+      },
+      "trustTransparency": {
+        "title": "Vertrauen & Transparenz",
+        "description": "Aufbau dauerhafter Beziehungen durch ehrliche Kommunikation und transparente Geschäftspraktiken."
+      },
+      "customerFocus": {
+        "title": "Kundenorientierung",
+        "description": "Ihr Erfolg ist unser Erfolg. Wir sind verpflichtet, Ihre Erwartungen zu verstehen und zu übertreffen."
+      }
+    }
+  },
+  "footer": {
+    "description": "GlobalTrustHub ist Ihr vertrauensvoller Partner für Premium-Exportdienstleistungen, spezialisiert auf hochwertige Makhana und authentisches indisches Handwerk. Wir verbinden indische Exzellenz mit globalen Märkten.",
+    "quickLinks": "Schnelllinks",
+    "contactInfo": "Kontaktinformationen",
+    "copyright": "© 2025 GlobalTrustHub. Alle Rechte vorbehalten. | Wo Qualität auf die Welt trifft",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen"
+  },
+  "products": {
+    "hero": {
+      "title": "Unsere Premium-Produkte",
+      "subtitle": "Entdecken Sie die feinsten indischen Produkte, sorgfältig ausgewählt und qualitätsgesichert für globale Märkte"
+    },
+    "qualityAssurance": {
+      "title": "Qualität, der Sie vertrauen können",
+      "subtitle": "Jedes Produkt durchläuft strenge Qualitätskontrollen, um internationale Standards zu erfüllen",
+      "organic": {
+        "title": "Bio & Natürlich",
+        "description": "Alle unsere Produkte stammen aus Bio-Bauernhöfen und natürlichen Materialien"
+      },
+      "certified": {
+        "title": "Zertifizierte Qualität",
+        "description": "Internationale Zertifizierungen stellen sicher, dass unsere Produkte globale Standards erfüllen"
+      },
+      "exportReady": {
+        "title": "Exportbereit",
+        "description": "Sachgemäß verpackt und dokumentiert für reibungslosen internationalen Versand"
+      }
+    },
+    "requestQuote": "Angebot anfordern",
+    "categories": {
+      "foxNuts": "Lotuskerne",
+      "handicrafts": "Handwerk"
+    },
+    "features": {
+      "organicCertified": "Bio-zertifiziert",
+      "highProtein": "Hoher Proteingehalt",
+      "glutenFree": "Glutenfrei",
+      "lowCalorie": "Kalorienarm",
+      "spiced": "Gewürzt",
+      "readyToEat": "Verzehrfertig",
+      "noPreservatives": "Keine Konservierungsstoffe",
+      "traditionalRecipe": "Traditionelles Rezept",
+      "handwoven": "Handgewebt",
+      "naturalDyes": "Natürliche Farben",
+      "traditionalPatterns": "Traditionelle Muster",
+      "ecoFriendly": "Umweltfreundlich",
+      "handcrafted": "Handgefertigt",
+      "pureBrass": "Reines Messing",
+      "traditionalDesign": "Traditionelles Design",
+      "antiqueFinish": "Antik-Finish",
+      "handCarved": "Handgeschnitzt",
+      "sustainableWood": "Nachhaltiges Holz",
+      "culturalHeritage": "Kulturerbe",
+      "uniquePieces": "Einzelstücke",
+      "handPainted": "Handbemalt",
+      "leadFree": "Bleifrei",
+      "microwaveSafe": "Mikrowellengeeignet",
+      "artisticDesign": "Künstlerisches Design"
+    },
+    "products": {
+      "premiumMakhana": {
+        "name": "Premium Makhana",
+        "description": "Bio, handverlesene Lotuskerne aus Bihars unberührten Feuchtgebieten. Reich an Protein, kalorienarm und perfekt für gesunde Snacks."
+      },
+      "roastedMakhana": {
+        "name": "Geröstete Makhana",
+        "description": "Perfekt geröstete Lotuskerne mit traditionellen indischen Gewürzen. Eine gesunde Alternative zu herkömmlichen Snacks."
+      },
+      "handwovenTextiles": {
+        "name": "Handgewebte Textilien",
+        "description": "Exquisite handgewebte Textilien, die traditionelles indisches Handwerk und lebendige Farben zeigen."
+      },
+      "brassArtifacts": {
+        "name": "Messing-Artefakte",
+        "description": "Authentische Messing-Artefakte, gefertigt von geschickten Handwerkern, perfekt für Heimdekoration und Geschenke."
+      },
+      "woodenSculptures": {
+        "name": "Holzskulpturen",
+        "description": "Komplex geschnitzte Holzskulpturen, die indische Mythologie und kulturelles Erbe repräsentieren."
+      },
+      "ceramicPottery": {
+        "name": "Keramik-Töpferei",
+        "description": "Schöne Keramik-Töpferei mit traditionellen Glasuren und modernen Designs für zeitgenössische Häuser."
+      }
+    }
+  },
+  "exportProcess": {
+    "hero": {
+      "title": "Exportprozess",
+      "subtitle": "Unser optimierter Exportprozess gewährleistet Qualität, Transparenz und pünktliche Lieferung in jedem Schritt."
+    },
+    "steps": {
+      "inquiry": {
+        "title": "Anfrage & Angebot",
+        "description": "Wir erhalten Ihre Anfrage und erstellen ein detailliertes Angebot, das auf Ihre Anforderungen zugeschnitten ist."
+      },
+      "orderConfirmation": {
+        "title": "Auftragsbestätigung",
+        "description": "Sobald Sie den Auftrag bestätigen, leiten wir den Beschaffungs- und Qualitätsprüfungsprozess ein."
+      },
+      "qualityAssurance": {
+        "title": "Qualitätssicherung",
+        "description": "Alle Produkte durchlaufen strenge Qualitätskontrollen, um sicherzustellen, dass sie internationale Standards erfüllen."
+      },
+      "logistics": {
+        "title": "Logistik & Versand",
+        "description": "Wir übernehmen Verpackung, Dokumentation und organisieren sichere, pünktliche Lieferung zu Ihrem Zielhafen."
+      },
+      "delivery": {
+        "title": "Lieferung & Support",
+        "description": "Wir bieten Tracking, Lieferaktualisierungen und Nachversand-Support für ein nahtloses Erlebnis."
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontaktieren Sie uns",
+      "subtitle": "Wir würden gerne von Ihnen hören! Füllen Sie das Formular unten aus oder erreichen Sie uns direkt."
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Ihr Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "sie@email.com",
+      "message": "Nachricht",
+      "messagePlaceholder": "Schreiben Sie Ihre Nachricht hier...",
+      "sendMessage": "Nachricht senden"
+    },
+    "contactInfo": {
+      "title": "Kontaktinformationen",
+      "email": "info@globaltrusthub.com",
+      "phone": "+91 8109663368",
+      "location": "Sheopur, Indien"
+    }
+  },
+  "certificates": {
+    "hero": {
+      "title": "Unsere Zertifikate",
+      "subtitle": "Wir sind verpflichtet zu Qualität und Compliance. Hier sind einige der Zertifizierungen, die unser Engagement für internationale Standards und Lebensmittelsicherheit demonstrieren."
+    },
+    "certificates": {
+      "iso9001": {
+        "title": "ISO 9001:2015",
+        "alt": "ISO 9001:2015 Zertifikat"
+      },
+      "fssai": {
+        "title": "FSSAI",
+        "alt": "FSSAI Zertifikat"
+      },
+      "apeda": {
+        "title": "APEDA",
+        "alt": "APEDA Zertifikat"
+      }
+    }
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "language": "Sprache"
+  }
+} 

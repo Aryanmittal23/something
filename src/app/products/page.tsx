@@ -5,69 +5,99 @@ import { Star, Leaf, Award, Globe } from "lucide-react"
 // import { Card, CardContent } from "@/components/ui/card"
 // import { Badge } from "@/components/ui/badge"
 import { useNavigate } from "react-router-dom"
+import { useTranslation } from 'react-i18next'
 
 export default function Products() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const products = [
     {
       id: 1,
-      name: "Premium Makhana",
-      category: "Fox Nuts",
-      description:
-        "Organic, hand-picked fox nuts from Bihar's pristine wetlands. Rich in protein, low in calories, and perfect for healthy snacking.",
+      name: t('products.products.premiumMakhana.name'),
+      category: t('products.categories.foxNuts'),
+      description: t('products.products.premiumMakhana.description'),
       image: "/makhana.jpg",
-      features: ["Organic Certified", "High Protein", "Gluten Free", "Low Calorie"],
+      features: [
+        t('products.features.organicCertified'),
+        t('products.features.highProtein'),
+        t('products.features.glutenFree'),
+        t('products.features.lowCalorie')
+      ],
       origin: "Bihar, India",
       rating: 4.9,
     },
     {
       id: 2,
-      name: "Roasted Makhana",
-      category: "Fox Nuts",
-      description:
-        "Perfectly roasted fox nuts with traditional Indian spices. A healthy alternative to conventional snacks.",
+      name: t('products.products.roastedMakhana.name'),
+      category: t('products.categories.foxNuts'),
+      description: t('products.products.roastedMakhana.description'),
       image: "/roasted-makhana.jpg",
-      features: ["Spiced", "Ready to Eat", "No Preservatives", "Traditional Recipe"],
+      features: [
+        t('products.features.spiced'),
+        t('products.features.readyToEat'),
+        t('products.features.noPreservatives'),
+        t('products.features.traditionalRecipe')
+      ],
       origin: "Bihar, India",
       rating: 4.8,
     },
     {
       id: 3,
-      name: "Handwoven Textiles",
-      category: "Handicrafts",
-      description: "Exquisite handwoven textiles showcasing traditional Indian craftsmanship and vibrant colors.",
+      name: t('products.products.handwovenTextiles.name'),
+      category: t('products.categories.handicrafts'),
+      description: t('products.products.handwovenTextiles.description'),
       image: "/textiles.jpg",
-      features: ["Handwoven", "Natural Dyes", "Traditional Patterns", "Eco-Friendly"],
+      features: [
+        t('products.features.handwoven'),
+        t('products.features.naturalDyes'),
+        t('products.features.traditionalPatterns'),
+        t('products.features.ecoFriendly')
+      ],
       origin: "Rajasthan, India",
       rating: 4.9,
     },
     {
       id: 4,
-      name: "Brass Artifacts",
-      category: "Handicrafts",
-      description: "Authentic brass artifacts crafted by skilled artisans, perfect for home decoration and gifting.",
+      name: t('products.products.brassArtifacts.name'),
+      category: t('products.categories.handicrafts'),
+      description: t('products.products.brassArtifacts.description'),
       image: "/brass-artifacts.jpg",
-      features: ["Handcrafted", "Pure Brass", "Traditional Design", "Antique Finish"],
+      features: [
+        t('products.features.handcrafted'),
+        t('products.features.pureBrass'),
+        t('products.features.traditionalDesign'),
+        t('products.features.antiqueFinish')
+      ],
       origin: "Uttar Pradesh, India",
       rating: 4.3,
     },
     {
       id: 5,
-      name: "Wooden Sculptures",
-      category: "Handicrafts",
-      description: "Intricately carved wooden sculptures representing Indian mythology and cultural heritage.",
+      name: t('products.products.woodenSculptures.name'),
+      category: t('products.categories.handicrafts'),
+      description: t('products.products.woodenSculptures.description'),
       image: "/wooden-sculptures.jpg",
-      features: ["Hand Carved", "Sustainable Wood", "Cultural Heritage", "Unique Pieces"],
+      features: [
+        t('products.features.handCarved'),
+        t('products.features.sustainableWood'),
+        t('products.features.culturalHeritage'),
+        t('products.features.uniquePieces')
+      ],
       origin: "Karnataka, India",
       rating: 4.2,
     },
     {
       id: 6,
-      name: "Ceramic Pottery",
-      category: "Handicrafts",
-      description: "Beautiful ceramic pottery with traditional glazes and modern designs for contemporary homes.",
+      name: t('products.products.ceramicPottery.name'),
+      category: t('products.categories.handicrafts'),
+      description: t('products.products.ceramicPottery.description'),
       image: "/ceramic-pottery.jpg",
-      features: ["Hand Painted", "Lead Free", "Microwave Safe", "Artistic Design"],
+      features: [
+        t('products.features.handPainted'),
+        t('products.features.leadFree'),
+        t('products.features.microwaveSafe'),
+        t('products.features.artisticDesign')
+      ],
       origin: "Gujarat, India",
       rating: 4.6,
     },
@@ -84,9 +114,9 @@ export default function Products() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-5xl font-bold text-amber-900 mb-6">Our Premium Products</h1>
+            <h1 className="text-5xl font-bold text-amber-900 mb-6">{t('products.hero.title')}</h1>
             <p className="text-xl text-amber-700 max-w-3xl mx-auto">
-              Discover the finest Indian products, carefully selected and quality-assured for global markets
+              {t('products.hero.subtitle')}
             </p>
           </motion.div>
         </div>
@@ -142,7 +172,7 @@ export default function Products() {
                       className="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 rounded"
                       onClick={() => navigate(`/contact?product=${encodeURIComponent(product.name)}`)}
                     >
-                      Request Quote
+                      {t('products.requestQuote')}
                     </button>
                   {/* </CardContent> */}
                 {/* </Card> */}
@@ -161,9 +191,9 @@ export default function Products() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold text-amber-900 mb-4">Quality You Can Trust</h2>
+            <h2 className="text-4xl font-bold text-amber-900 mb-4">{t('products.qualityAssurance.title')}</h2>
             <p className="text-lg text-amber-700 max-w-2xl mx-auto">
-              Every product undergoes rigorous quality checks to meet international standards
+              {t('products.qualityAssurance.subtitle')}
             </p>
           </motion.div>
 
@@ -171,18 +201,18 @@ export default function Products() {
             {[
               {
                 icon: Leaf,
-                title: "Organic & Natural",
-                description: "All our products are sourced from organic farms and natural materials",
+                title: t('products.qualityAssurance.organic.title'),
+                description: t('products.qualityAssurance.organic.description'),
               },
               {
                 icon: Award,
-                title: "Certified Quality",
-                description: "International certifications ensure our products meet global standards",
+                title: t('products.qualityAssurance.certified.title'),
+                description: t('products.qualityAssurance.certified.description'),
               },
               {
                 icon: Globe,
-                title: "Export Ready",
-                description: "Properly packaged and documented for smooth international shipping",
+                title: t('products.qualityAssurance.exportReady.title'),
+                description: t('products.qualityAssurance.exportReady.description'),
               },
             ].map((feature, index) => (
               <motion.div

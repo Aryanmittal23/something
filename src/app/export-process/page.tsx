@@ -1,40 +1,42 @@
 import { Package, ClipboardList, CheckCircle, Truck, Globe } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 
 export default function ExportProcess() {
+  const { t } = useTranslation();
   const steps = [
     {
       icon: ClipboardList,
-      title: "Inquiry & Quotation",
-      description: "We receive your inquiry and provide a detailed quotation tailored to your requirements.",
+      title: t('exportProcess.steps.inquiry.title'),
+      description: t('exportProcess.steps.inquiry.description'),
     },
     {
       icon: Package,
-      title: "Order Confirmation",
-      description: "Once you confirm the order, we initiate the procurement and quality check process.",
+      title: t('exportProcess.steps.orderConfirmation.title'),
+      description: t('exportProcess.steps.orderConfirmation.description'),
     },
     {
       icon: CheckCircle,
-      title: "Quality Assurance",
-      description: "All products undergo rigorous quality checks to ensure they meet international standards.",
+      title: t('exportProcess.steps.qualityAssurance.title'),
+      description: t('exportProcess.steps.qualityAssurance.description'),
     },
     {
       icon: Truck,
-      title: "Logistics & Shipping",
-      description: "We handle packaging, documentation, and arrange safe, timely shipment to your destination port.",
+      title: t('exportProcess.steps.logistics.title'),
+      description: t('exportProcess.steps.logistics.description'),
     },
     {
       icon: Globe,
-      title: "Delivery & Support",
-      description: "We provide tracking, delivery updates, and post-shipment support for a seamless experience.",
+      title: t('exportProcess.steps.delivery.title'),
+      description: t('exportProcess.steps.delivery.description'),
     },
   ];
 
   return (
     <div className="min-h-screen bg-cream-50 flex flex-col items-center py-16 px-4">
       <div className="max-w-4xl w-full bg-white rounded-xl shadow-lg p-8">
-        <h1 className="text-4xl font-bold text-amber-900 mb-2 text-center">Export Process</h1>
+        <h1 className="text-4xl font-bold text-amber-900 mb-2 text-center">{t('exportProcess.hero.title')}</h1>
         <p className="text-amber-700 mb-10 text-center">
-          Our streamlined export process ensures quality, transparency, and timely delivery at every step.
+          {t('exportProcess.hero.subtitle')}
         </p>
         <ol className="space-y-8">
           {steps.map((step, idx) => (
